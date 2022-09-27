@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class CountNumbers {
 	public static void main(String[] args) {
 		Scanner scn = new Scanner(System.in);
-		System.out.print("Enter the number: "); //3345545
+		System.out.print("Enter the number: ");  //3345545
 		int num = scn.nextInt();
 
 		int count = 0;
@@ -19,6 +19,7 @@ public class CountNumbers {
 			}
 			num = num / 10;
 		}
+		
 		System.out.println(count);
 	}
 
