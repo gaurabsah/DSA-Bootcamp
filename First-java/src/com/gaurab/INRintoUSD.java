@@ -8,8 +8,9 @@ public class INRintoUSD {
 		System.out.println("Enter the amount into INR: ");
 		double INR = scn.nextDouble();
 
-		double converter = INR / 74.12;
+		double converter = INR / 74.12; // current 1 USD = 74.12
 		System.out.println("USD= " + converter);
+		
 	}
 
 }
