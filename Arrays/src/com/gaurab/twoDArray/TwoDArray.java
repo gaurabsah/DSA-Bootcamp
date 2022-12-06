@@ -1,5 +1,6 @@
 package com.gaurab.twoDArray;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 /*
@@ -32,6 +33,14 @@ public class TwoDArray {
 				System.out.print(arr[row][column] + " ");
 			}
 			System.out.println();
+		}
+		
+		/*
+		 * another way to print the output 
+		 */
+
+		for (int row = 0; row < arr.length; row++) {
+			System.out.println(Arrays.toString(arr[row]));
 		}
 	}
 
