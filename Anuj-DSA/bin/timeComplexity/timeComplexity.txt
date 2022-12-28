@@ -1,0 +1,3 @@
+Binary Searching (part by part i.e low-mid-high): O(log(n))
+Linear Searching (Step by Step): O(n)
+Constant (within first 2 step): O(1)
