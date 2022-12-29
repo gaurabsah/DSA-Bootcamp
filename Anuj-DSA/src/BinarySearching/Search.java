@@ -16,7 +16,7 @@ public class Search {
 
 			if (key > arr[mid]) {
 				start = mid + 1;
-			} else {
+			} else if (key < arr[mid]) {
 				end = mid - 1;
 			}
 			mid = start + (end - start) / 2;
