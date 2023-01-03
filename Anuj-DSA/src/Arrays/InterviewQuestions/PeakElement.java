@@ -1,4 +1,4 @@
-package Arrays.Easy;
+package Arrays.InterviewQuestions;
 
 /*
  * Link: https://www.geeksforgeeks.org/find-a-peak-in-a-given-array/

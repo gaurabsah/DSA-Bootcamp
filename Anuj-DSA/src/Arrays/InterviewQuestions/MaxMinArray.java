@@ -1,4 +1,4 @@
-package Arrays.Easy;
+package Arrays.InterviewQuestions;
 
 // time complexity : O(n)
 
