@@ -1,6 +1,7 @@
 package Arrays.InterviewQuestions;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class RemoveEvenInteger {
 
@@ -31,6 +32,11 @@ public class RemoveEvenInteger {
 		int[] ans = removeEvenInteger(arr, n);
 
 		System.out.println(Arrays.toString(ans));
+
+//		using Stream API
+
+		List<Integer> list = Arrays.asList(3, 2, 4, 7, 10, 6, 5);
+		list.stream().filter(a -> a % 2 != 0).forEach(System.out::println);
 
 	}
 
