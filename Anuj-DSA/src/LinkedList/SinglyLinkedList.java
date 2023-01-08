@@ -80,6 +80,22 @@ public class SinglyLinkedList {
 		return current;
 	}
 
+//	delete at given position
+	public void deleteAtPosition(int position) {
+		if (position == 1) {
+			head = head.next;
+		} else {
+			ListNode previous = head;
+			int count = 1;
+			while (count < position - 1) {
+				previous = previous.next;
+				count++;
+			}
+			ListNode current = previous.next;
+			previous.next = current.next;
+		}
+	}
+
 // length of list
 	public int lengthOfList() {
 		if (head == null) {
@@ -133,6 +149,9 @@ public class SinglyLinkedList {
 		sll.display();
 
 		sll.deleteLast();
+		sll.display();
+
+		sll.deleteAtPosition(3);
 		sll.display();
 	}
 
