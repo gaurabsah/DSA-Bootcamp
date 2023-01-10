@@ -25,7 +25,10 @@ public class RemoveDuplicateFromSorted {
 	}
 
 //	Remove Duplicate node from sorted SLL
-	public void removeDuplicate(ListNode head) {
+	public ListNode removeDuplicate(ListNode head) {
+		if (head == null) {
+			return head;
+		}
 		ListNode current = head;
 		while (current != null && current.next != null) {
 			if (current.data == current.next.data) {
@@ -34,6 +37,7 @@ public class RemoveDuplicateFromSorted {
 				current = current.next;
 			}
 		}
+		return head;
 	}
 
 	public static void main(String[] args) {
